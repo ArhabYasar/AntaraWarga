@@ -66,9 +66,19 @@ class PromosiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function showDetailPromosi(string $id)
     {
-        //
+        $data = Promosi::find($id);
+
+        // Periksa apakah data ditemukan
+        if ($data) {
+            return view('Dashboard.dashboard-umkm.DetailPromosi', compact('data'));
+        } else {
+            // Tampilkan pesan atau lakukan sesuatu jika data tidak ditemukan
+            return redirect()->route('/dashboardUMKM/Promosi')->with('error', 'Data Pasar tidak ditemukan');
+        }
+
+
     }
 
     /**

@@ -464,7 +464,7 @@ text-decoration: none;
 <div class="container">
 
 
-  <div class="sidebar">
+    <div class="sidebar">
         <div class="main">
 
           <div class="list-nine">
@@ -486,11 +486,11 @@ text-decoration: none;
                   <i class="fas fa-angle-right dropdown"></i>
                 </a>
                   <div class="sub-menu">
-                    <a href="{{ url('/Hunian') }}" class="sub-item">Data Hunian</a>
-                    <a href="{{ url('/Warga') }}" class="sub-item">Data Warga</a>
-                    <a href="{{ url('/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
-                    <a href="{{ url('/PindahHunian') }}" class="sub-item">Keluarga Pindah Rumah</a>
-                    <a href="{{ url('/Kepemilikan') }}" class="sub-item">Kepemilikan hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DataHunian') }}" class="sub-item">Data Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DaraWarga') }}" class="sub-item">Data Warga</a>
+                    <a href="{{ url('/dashboardPengurus/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
+                    <a href="{{ url('/dashboardPengurus/DataPindah') }}" class="sub-item">Keluarga Pindah Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
                   </div>
                   </div>
 
@@ -502,9 +502,9 @@ text-decoration: none;
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/PerKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
-                  <a href="{{ url('/JabKepengurusan') }}" class="sub-item">Jabatan Kepengurusan</a>
-                  <a href="{{ url('/DatPengurus') }}" class="sub-item">Data Pengurus</a>
+                  <a href="{{ url('/dashboardPengurus/PeriodeKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Jabatan') }}" class="sub-item">Jabatan Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
                   </div>
               </div>
 
@@ -515,11 +515,10 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Databank') }}" class="sub-item">Data Bank</a>
-                  <a href="{{ url('/Posbiaya') }}" class="sub-item">Pos Biaya</a>
-                  <a href="{{ url('/Rekeningbank') }}" class="sub-item">Rekening Bank</a>
-                  <a href="{{ url('/Datakas') }}" class="sub-item">Data Kas</a>
-                  <a href="{{ url('/KeuanganLaporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/Databank') }}" class="sub-item">Data Bank</a>
+                  <a href="{{ url('/dashboardPengurus/Posbiaya') }}" class="sub-item">Pos Biaya</a>
+                  <a href="{{ url('/dashboardPengurus/RekeningBank') }}" class="sub-item">Rekening Bank</a>
+                  <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
                   </div>
               </div>
 
@@ -528,10 +527,10 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Dataiuran') }}" class="sub-item">Data Iuran</a>
-                  <a href="{{ url('/Terimaiuran') }}" class="sub-item">Terima Iuran</a>
-                  <a href="{{ url('/Laporaniuran') }}" class="sub-item">Laporan</a>
-                  <a href="{{ url('/IngatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
+                  <a href="{{ url('/dashboardPengurus/Iuran') }}" class="sub-item">Data Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
                   </div>
               </div>
 
@@ -540,33 +539,33 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
-                  <a href="{{ url('/DataSatpam') }}" class="sub-item">Data Satpam</a>
-                  <a href="{{ url('/JadwalJaga') }}" class="sub-item">Jadwal Jaga</a>
-                  <a href="{{ url('/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
+                  <a href="{{ url('/dashboardPengurus/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
+                  <a href="{{ url('/dashboardPengurus/DataSatpam') }}" class="sub-item">Data Satpam</a>
+                  <a href="{{ url('/dashboardPengurus/DataJadwal') }}" class="sub-item">Jadwal Jaga</a>
+                  <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
                   </div>
                 </div>
 
 
-                <div  class="item"><a href="{{ url('/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
+                <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
 
                 </a>
                 </div>
 
-                <div class="item"><a href="{{ url('/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+                <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
 
                 </a>
                 </div>
 
-                <div class="item"><a href="{{ url('/Evoting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
+                <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
 
                 </a>
                 </div>
-                <div class="item"><a href="{{ url('/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+                <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
                   </a>
                   </div>
 
-                  <div class="item"><a href="{{ url('/BeritaKampung') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
+                  <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
 
                   </a>
                   </div>
@@ -574,18 +573,17 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/ManajemenUser') }}" class="sub-item">User</a>
-                  <a href="{{ url('/Manajemen') }}" class="sub-item">Role</a>
+                  <a href="{{ url('/dashboardPengurus/Users') }}" class="sub-item">User</a>
+                  <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
                   </div>
                 </div>
-
 
 
         </div>
   </div>
   <div class="main-konten">
         <div class="around">
-          <h1 class="strip">senin 19 desember | 11:40</h1>
+            <div class="strip" id="liveTime"></div>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
@@ -622,6 +620,7 @@ text-decoration: none;
     </div>
 
 <div class="tableone">
+    @include('komponen.pesan')
     <form action="{{ url('/dashboardPengurus/RumahKosong') }}" method="post">
         @csrf
             <div class="hunian">
@@ -699,6 +698,20 @@ text-decoration: none;
            })
           })
           </script>
+          <script>
+            function updateClock() {
+                var now = new Date();
+                var day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+                var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+                var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+                var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
+
+                document.getElementById('liveTime').innerText = currentTime;
+            }
+
+            setInterval(updateClock, 1000); // Perbarui setiap detik
+            updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
+        </script>
 
 
 

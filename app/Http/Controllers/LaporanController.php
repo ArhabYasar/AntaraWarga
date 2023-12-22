@@ -12,9 +12,22 @@ class LaporanController extends Controller
      */
     public function index(Request $request)
     {
-        $iuranData = Iuran::paginate(10); // Ganti 10 dengan jumlah item per halaman yang Anda inginkan
+        $cari = $request->cari;
+        $jumlahbaris = 5;
 
-        return view('Dashboard.dashboard-pengurus.iuran-warga.Laporan', compact('iuranData'));
+        $query = Iuran::query();
+
+        if ($cari) {
+            $query->where('tipe', 'LIKE', '%' . $cari . '%')
+                ->orWhere('nama', 'LIKE', '%' . $cari . '%')
+                ->orWhere('keterangan', 'LIKE', '%' . $cari . '%')
+                ->orWhere('nominal', 'LIKE', '%' . $cari . '%');
+        }
+
+        $iuranData = $query->paginate($jumlahbaris);
+
+        return view('Dashboard.dashboard-pengurus.iuran-warga.Laporan')->with('iuranData', $iuranData);
+
     }
 
     /**
@@ -36,9 +49,21 @@ class LaporanController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id, Request $request)
     {
-        $iuranData = Iuran::paginate(10); // Ganti 10 dengan jumlah item per halaman yang Anda inginkan
+        $cari = $request->cari;
+        $jumlahbaris = 5;
+
+        $query = Iuran::query();
+
+        if ($cari) {
+            $query->where('tipe', 'LIKE', '%' . $cari . '%')
+                ->orWhere('nama', 'LIKE', '%' . $cari . '%')
+                ->orWhere('keterangan', 'LIKE', '%' . $cari . '%')
+                ->orWhere('nominal', 'LIKE', '%' . $cari . '%');
+        }
+
+        $iuranData = $query->paginate($jumlahbaris);
 
         return view('Dashboard.dashboard-petugas.iuran-warga.LaporanIuran', compact('iuranData'));
     }

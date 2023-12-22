@@ -583,17 +583,16 @@ line-height: normal;
                 </a>
                 </div>
 
-                <div class="item"><a class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+                <div class="item"><a href="/dashboardWarga/Pengumuman" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                   </div>
 
-                <div class="item"><a class="sub-btn"><img src="{{ asset('img/home.png') }}"alt="" class="icon"></i>E-Voting
-                  <i class="fas fa-angle-right dropdown"></i>
-                </a>
+                <div class="item"><a href="/dashboardWarga/E-Voting" class="sub-btn"><img src="{{ asset('img/home.png') }}"alt="" class="icon"></i>E-Voting
+=                </a>
                 </div>
 
-                  <div class="item"><a class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+                  <div class="item"><a href="/dashboardWarga/UMKM" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                   </div>
@@ -607,7 +606,7 @@ line-height: normal;
   </div>
     <div class="main-konten">
         <div class="around">
-          <h1 class="strip">senin 19 desember 123</h1>
+            <div class="strip" id="liveTime"></div>
                 <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                 </h1>
                       <div class="drop"><a class="sub-btn">
@@ -623,32 +622,31 @@ line-height: normal;
           <div class="navbar">
             <div class="green">
                 <a><img src="{{ asset('img/123.svg') }}" alt="" class="icon">History Kedatangan Tamu</h1></a>
-                <h1 class="text-one">4 Orang</h1>
+                <h1 class="text-one">{{ $jumlahData }} Orang</h1>
               </div>
 
               <div class="yellow">
-                <a><img src="{{ asset('img/what.svg') }}" alt="" class="icon">Total Tagihan Iuran</h1></a>
-                <h1 class="text-one">Tidak Ada Tagihan Untuk Iuran</h1>
-              </div>
+                @foreach ($tagihan as $item)
+                    <a><img src="{{ asset('img/what.svg') }}" alt="" class="icon">Total Tagihan Iuran</h1></a>
+                    <h1 class="text-one">{{ $item->nominal }}</h1>
+                @endforeach
+            </div>
 
               <div class="red">
                 <a><img src="{{ asset('img/sangkuni.svg') }}" alt="" class="icon">History Pembayaran Iuran</h1></a>
-                <h1 class="text-one">4 KALI BAYAR</h1>
+                <h1 class="text-one">{{ $pembayaran }} KALI BAYAR</h1>
 
               </div>
 
           <div class="allert">
             <a><img src="{{ asset('img/alert-circle.svg') }}" alt="" class="icon">Pengumuman</h1></a>
             <span>
-              <h1 class="text-one" align="left">Kategori : Kebersihan.</h1>
-              <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
-              <h1 class="text-one" align="left">Isi Pengumuman :</h1>
-              <h1 class="text-one" align="left">Diberitahukan kepada seluruh</h1>
-              <h1 class="text-one" align="left">warga bahwa pada tanggal 01</h1>
-              <h1 class="text-one" align="left">Oktober 2021 akan diadakan kerja</h1>
-              <h1 class="text-one" align="left">bakti pembersihan gorong-gorong.</h1>
-              <h1 class="text-one" align="left">dimohon kehadirannya.</h1>
-              <h1 class="text-one" align="left">terima kasih.</h1>
+                @foreach ($pengumuman as $item)
+                <h1 class="text-one" align="left">Kategori : {{ $item->kategori }}</h1>
+                <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
+                <h1 class="text-one" align="left">Isi Pengumuman :</h1>
+                <h1 class="text-one" align="left">{{ $item->isi }}</h1>
+                @endforeach
             </span>
           </div>
 
@@ -656,17 +654,12 @@ line-height: normal;
             <a><img src="{{ asset('img/berita.svg') }}" alt="" class="icon">Berita Kampung</h1></a>
 
 
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                <p>_______________________________________________________</p>
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                <p>_______________________________________________________</p>
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
+            @foreach ($berita as $item)
+                <h1 class="text-one" align="left"><img src="{{ asset('path-to-your-image-directory/' . $item->foto) }}" alt="" class="icon"></a>
+                <h1 class="text-tree" align="left">{{ $item->judul }}</h1>
+                <h1 class="text-two" align="left">{{ $item->isi }}</h1>
+                <hr>
+            @endforeach
 
     </div>
 
@@ -679,7 +672,20 @@ line-height: normal;
 
 
 
+<script>
+    function updateClock() {
+        var now = new Date();
+        var day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+        var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+        var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+        var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
 
+        document.getElementById('liveTime').innerText = currentTime;
+    }
+
+    setInterval(updateClock, 1000); // Perbarui setiap detik
+    updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
           <script>
            $(document).ready(function(){

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -67,6 +66,7 @@ left : 260px;
   padding: 27px;
   box-sizing: border-box;
 }
+
 
 
 .list-one{
@@ -151,12 +151,6 @@ line-height: normal;
   margin: -5px 0 0 px 0;
 
 }
-.main .item .sub-item {
-  color: #FFF;
-  font-size: 9px;
-  text-decoration: none;
-
-}
 
 .main .item .icon {
   margin-right: 20px;
@@ -215,12 +209,13 @@ line-height: normal;
                 color: #000;
             }
             table th, table td{
-              border : 1px solid gray;
+              border : 1px solid grey;
                 text-align : center;
                 padding : 10px;
             }
 
             table>thead th{
+              border : 1px solid Black;
                 width: 1050px;
                 height: 50px;
                 flex-shrink: 0;
@@ -303,13 +298,23 @@ line-height: normal;
               
             }
             .pencarian{
-              width: 1050px;
-              height: 111px;
+              width: 500px;
+              height: 400px;
               flex-shrink: 0;
               border-radius: 20px;
               border: 0.3px solid #000;
               background: #FFF;
-              margin : 10px 10px 10px 25px;
+              margin : 40px 10px 10px 255px;
+            }
+            .pencarian p{
+                color: #000;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-left : 180px ;
+                margin-top : 50px;
             }
             .zack{
               font-size: 3px;
@@ -330,20 +335,26 @@ line-height: normal;
             margin : 40px 10px 10px 250px ;
         }
         .pencarian .icon {
-          margin : -70px 10px 10px 655px;
+            margin-left : 120px;
         }
-        .zaki .btn-dark{
+        .zaki .btn-warning{
+          width: 60px;
+          height: 35px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: #464648;
+        }
+        .zaki .btn-warning{
           color: #FFF;
           font-family: Poppins;
-          font-size: 15px;
+          font-size: 18px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
-          border-radius: 10px;
           text: center;
         }
        
-        .zaki .btn-dark{
+        .zaki .btn-warning{
           margin : -120px 10px 10px 720px;
           text-align: center;
         }
@@ -353,50 +364,81 @@ line-height: normal;
           
         }
         .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 265px;
+            background: #FFF;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            border: 1px solid #000;
+            padding: 20px;
+            flex-shrink: 0;
+            margin : 170px 10px 10px 500px;
+            
+        }
+    
 
-.modal-content {
-    background-color: #D3D3D3;
-    width: 60%;
-    max-width: 400px;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 605px;
-    height: 255px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .modal-kontent {
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-.close {
-    float: right;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right : -350px;
-    display : none;
-}
-.modal .radio {
-margin : 10px 0 0 -250px;
-margin-right : 20px;
-}
-.modal .btn-primary{
-  margin-top: 50px;
-  margin-right: 20px;
-}
-.modal .btn-light{
-  border : #000;
-  margin-top: 50px;
-}
-.around .kanan   {
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #confirmDelete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 69px;
+            height: 30px;
+            flex-shrink: 0;
+            background-color: #6571FE;
+            color: white;
+            margin : 40px 10px 10px 120px;
+            }
+
+        #cancelDelete {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #FFF;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          width: 69px;
+          height: 30px;
+          flex-shrink: 0;
+          background-color: red;
+          text-align: center;
+          margin : -40px 10px 10px 220px;
+
+        }
+        .modal .icon{
+          width: 70px;
+          height: 70px;
+          margin-bottom: 10px;
+        }
+        
+        .around .kanan   {
   width: 29px;
   height: 29px;
   flex-shrink: 0;
@@ -488,109 +530,49 @@ text-decoration: none;
   line-height: normal;
   margin-left: 27px;
 }
-
-
-.chat-container {
-      width: 1000px;
-      height : 500px;
-      margin: 50px auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .jig {
-  margin-left : 10px;
-  margin-right : 10px;
+.kick{
+  margin-left: 90px;
+  margin-right: 6px;
 }
-.jog {
-  margin-left : 10px;
-  margin-right : 10px;
+.slow{
+  margin-left: 150px;
+  margin-right: 10px;
 }
-.how{
-  font-size : 11px;
-  margin : 10px 0 0 300px;
+.denim{
+  margin-left: 27px;
+  margin-right: 10px;
 }
-.haw{
-  font-size : 11px;
-  margin : -18px 0 0 500px;
-}
+.simpen .btn-primary{
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 140px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            margin-right :30px;
+            border: 1px solid #6471FE;
+            margin : 26px 20px 30px 350px;
+            background :#6471FE;
+        }
+         .simpen .shut{
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 140px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 1px solid  #6471FE; 
+            background : #FFF;
+        }
 
-    .chat-messages {
-      padding: 15px;
-      overflow-y: auto;
-      max-height: 400px;
-    }
 
-    .message {
-      margin-bottom: 10px;
-      display: flex;
-      flex-direction: column;
-    }
 
-    .message p {
-      background-color: #ffffff;
-      padding: 10px;
-      border-radius: 8px;
-      max-width: 70%;
-      border: 2px solid #ccc;
-
-    }
-
-    .message.sent p {
-      background-color: #6471FE;
-      align-self: flex-end;
-    }
-
-    .message.received p {
-      background-color: #ffffff;
-      align-self: flex-start;
-      border : 
-    }
-
-    .message .meta {
-      font-size: 0.8em;
-      color: #777;
-      margin-top : -16px;
-    }
-
-    .message.sent .meta {
-      text-align: right;
-    }
-
-    .message.received .meta {
-      text-align: left;
-    }
-
-    .chat-input {
-  display: flex;
-  padding: 5px;
-  position: absolute;
-  top: 640px;
-  left: 56px;
-  right: 0;
-  width : 980px;
-  height : 60px;
-}
-
-.input-field {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 4px;
-}
-
-.send-button {
-  padding: 10px;
-  background : white ;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  position : absolute ; 
-  left : 920px;
-  top : 8px;
-
-}
 
     </style>
 
@@ -610,85 +592,35 @@ text-decoration: none;
 
                 <span class="list-two">Warga</span>
             </h1>
-            </div>
-          <div class="item"><a href="{{ url('/DashboardWarga') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
+          </div>
+          <div class="item"><a href="{{ url('/DashboardUMKM') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
           <p class="zack">-</p>
           
-          
-
-
-
-          <div class="item"><a class="sub-btn"><img src="{{ asset('img/atm 1.png') }}"alt="" class="icon">Iuran Warga
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/PengingatTagihan') }}" class="sub-item">Tagihan & Pengingat Pembayaran</a>
-                  <a href="{{ url('/PengingatTagihan/create') }}" class="sub-item">Konfirmasi Pembayaran Iuran</a>
-                  <a href="{{ url('/LaporanPembayaran') }}" class="sub-item">Laporan Pembayaran</a>
+            
+                  <div class="item"><a href="{{ url('/MediaPP') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Promosi Produk
+                  </a>
+                  </div>
+                  <div class="item"><a href="{{ url('/MediaTransaksi') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Transaksi
+                  </a>
+                  </div>
+                  <div class="item"><a href="{{ url('/KampungPasar') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Kampung Pasar
+                  </a>
+                  </div>
+  
+            
                   
-                  </div>               
-              </div>
-
-              <div class="item"><a class="sub-btn"><img src="{{ asset('img/bar-chart.png') }}"alt="" class="icon"></i>Keuangan
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/Keuangan') }}" class="sub-item">Laporan Keuangan</a>
-                  </div>
-              </div>
-            
-            
-              <div class="item"><a class="sub-btn"><img src="{{ asset('img/shield.png') }}"alt="" class="icon"></i>Keamanan
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                <a href="{{ url('/Veripikasi') }}" class="sub-item">Veripikasi Akun</a>
-                  </div>
-                </div>
-            
-            
-                <div class="item"><a href="{{ url('/DisWarga') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
-                </a>
-                </div>
-
-                <div class="item"><a href="{{ url('/PengWarga') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
-                  </a>
-                  </div>
-            
-                <div class="item"><a href="{{ url('/Ewarga') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
-                </a>
-                </div>
-            
-                  <div class="item"><a href="{{ url('/UMKMWarga') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
-                  </a>
-                  </div>
-</div>
+        </div>
   </div> 
     <div class="main-konten">
         <div class="around">
-          <h1 class="strip">senin 19 desember | 10:48</h1>
+          <h1 class="strip">senin 19 desember | 10:46</h1>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
                                     <i class="fas fa-angle-right dropdown"></i></a>      
                                       <div class="sub-menu">
-                                  
-                                      <div class="view">
-                                      <a href="{{ url('/ProWarga') }}" class="tohe">
-                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
-                                      View Profile
-                                    </a>
-                                    </div>
-
-                                    <div class="edit">
-                                    <a href="{{ url('/ProWarga/create') }}" class="toha">
-                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
-                                      Edit Profile
-                                    </a>
-                                    </div>
-
-                                    <div class="logout">
+                                                                      <div class="logout">
                                     <a href="#" class="tohe">
                                       Logout
                                     </a>
@@ -697,33 +629,27 @@ text-decoration: none;
                                       </div>
                             </div> 
 
-                <p class="Data">DISKUSI</p>
+                <p class="Data">MEDIA PROMOSI PRODUKSI</p>
                 <p class="nice">-</p>
 
-                <div class="chat-container">
-                    <div class="chat">
-                        <div class="top">
-                            <p class="how">Topik<span class="jig">:</span>{{ $diskusi->judul }}</p>
-                        </div>
-                        <div class="messages">
-                                @include('Dashboard.dashboard-pengurus.pengumuman.receive',['message' => " "])
-                        </div>
-                        <!-- Add more messages as needed -->
-                        <div class="bottom">
-                                <form>
-                                    @csrf
-                                    <input type="text" class="input-field" placeholder="Type your message">
-                                    <button type="submit" class="send-button" onclick="sendMessage()"><img src="{{ asset('img/pesawat.svg') }}" alt="View Profile" class="icon">
-                                    </button>
-                                </form>
-                        </div>
-                    </div>
+                <div class="pencarian">
+                    @if($data)
+                    <img src="{{ asset('path-to-your-image-directory/' . $data->foto) }}" alt="" class="icon">
+                    <p>{{ $data->nama }}</p>
+                @else
+                    <p>Data Pasar tidak ditemukan</p>
+                @endif
+                
+                
                 </div>
-         
-  
-
-
-
+                <div class="simpen">
+                <label class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button>
+                    <a href="{{ url('/dashboardUMKM/Promosi') }}">
+                        <button class="shut" name="submit">Kembali</button>
+                    </a>
+                </div>
+        
   </div>
 </div>
 
@@ -749,45 +675,26 @@ text-decoration: none;
            })
           })
           </script>
-          
-          <script>    
-            const pusher = new Pusher('{{config('broadcasting.connections.pusher.key')}}', {cluster: 'ap1'});
-            const channel = pusher.subscribe('public');
-        
-            //Receive Message
-            channel.bind('chat', function(data){
-                $.post("/dashboardPengurus/receive",{
-                    _token: '{{csrf_token()}}',
-                    message: data.message,
-                })
-                    .done(function (res) {
-                        $(".messages > .message").last().after(res);
-                        $(document).scrollTop($(document).height());
-                });
-            });
-        
-            //Broadcast Message
-            $("form").submit(function(event){
-                event.preventDefault();
-        
-                $.ajax({
-                    url: '/dashboardPengurus/broadcast',
-                    method: 'POST',
-                    headers: {
-                        'X-Socket-Id': pusher.connection.socket_id
-                    },
-                    data: {
-                        _token: '{{csrf_token()}}',
-                        message: $("form #message").val(),
-                    }
-                }).done(function (res){
-                    $(".messages > .message").last().after(res);
-                    $("form #message").val('');
-                    $(document).scrollTop($(document).height());
-                });
-            });
-        </script>
-        
+          <script>
+          const deleteButton = document.getElementById("deleteButton");
+          const modal = document.getElementById("modal");
+          const confirmDelete = document.getElementById("confirmDelete");
+          const cancelDelete = document.getElementById("cancelDelete");
+
+          deleteButton.addEventListener("click", () => {
+              modal.style.display = "block";
+          });
+
+          cancelDelete.addEventListener("click", () => {
+              modal.style.display = "none";
+          });
+
+          confirmDelete.addEventListener("click", () => {
+              // Di sini Anda bisa menambahkan logika penghapusan item atau tindakan yang sesuai
+              console.log("Item deleted.");
+              modal.style.display = "none";
+          });
+          </script>
           
           
           

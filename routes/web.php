@@ -144,6 +144,9 @@ Route::get('/dashboardUMKM',[AdminController::class,'UMKM'])->middleware('userAk
 Route::resource('/dashboardUMKM/Transaksi',TransaksiController::class)->middleware('userAkses:UMKM');
 Route::resource('/dashboardUMKM/Promosi',PromosiController::class)->middleware('userAkses:UMKM');
 Route::resource('/dashboardUMKM/Pasar',PasarController::class)->middleware('userAkses:UMKM');
+Route::get('/dashboardUMKM/Pasar/{id}/show', [PasarController::class, 'showDetailPasar'])->name('showDetailPasar');
+Route::get('/dashboardUMKM/Transaksi/{id}/show', [TransaksiController::class, 'showDetailTransaksi'])->name('showDetailTransaksi');
+Route::get('/dashboardUMKM/Promosi/{id}/show', [PromosiController::class, 'showDetailPromosi'])->name('showDetailPromosi');
 
 
 Route::get('/logout',[SesiController::class,'logout']);

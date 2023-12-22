@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard UMKM</title>
-    <link rel="stylesheet" href="still.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 
     <style>
-        *{
+*{
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin:0;
@@ -39,12 +43,15 @@
   margin-left: 260px;
 }
 
-.main-konten .around{
+.main-konten .around {
   width: 1090px;
-height: 69px;
-flex-shrink: 0;
-background: #E5E8F3;
+  height: 69px;
+  flex-shrink: 0;
+  background: #E5E8F3;
+  position: absolute;
+  left: 260px;
 }
+
 .around .strip {
   width: 400px;
   height: 4;
@@ -58,29 +65,50 @@ background: #E5E8F3;
   box-sizing: border-box;
 }
 
-.around .kanan  {
+.around .kanan   {
   width: 29px;
-height: 29px;
-flex-shrink: 0;
+  height: 29px;
+  flex-shrink: 0;
   width: 10px;
-  margin: -50px 10px 0px 1000px;
+  padding : 10px;
+  margin: -80px 10px 0px 990px;
 }
-.main-konten .around .drop{
+
+.main-konten .around .drop {
   width: 10px;
   height: 10px;
   flex-shrink: 0;
-  margin: -23px 40px 0px 1030px;
+  margin: -2px 40px 0px 1030px;
+  position: relative; /* Menambahkan properti position */
+  z-index: 2; /* Menambahkan z-index yang lebih tinggi */
 }
-.drop a .dropdown{
-  overflow: hidden;
+
+.drop a .dropdown {
+  color: #000;
   right: 0;
   transition: 0.3s ease;
+  position: absolute;
+  z-index: 1;
 }
 
-.drop .sub-menu{
-  background: #142262;
+.main-konten .around .drop .sub-menu {
+  width: 120px;
+  height: 60px;
+  font-size: 9px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transform: translateX(-40%);
+  margin-top : 15px;
+  margin-left : -14px;
   display: none;
-
 }
 
 .navbar .green {
@@ -100,9 +128,8 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 text-align: center;
-margin-left: 58px;
-margin-top: 30px;
-
+margin-left: -55px;
+margin-top: 120px;
 
 }
 .navbar .green .icon{
@@ -110,9 +137,14 @@ margin-top: 30px;
   height: 24px;
   flex-shrink: 0;
   margin-top: 20px;
+  margin-bottom : 20px;
 }
+
 .green .icon{
   margin-right: 15px;
+}
+.green a{
+  margin-top : 15px;
 }
 .main-konten .navbar .green .text-one{
 color: #403F3F;
@@ -123,7 +155,7 @@ font-weight: 600;
 line-height: normal;
 }
 .navbar .green .text-one{
-  margin-top: 19px;
+  margin-top: -10px;
 }
 
 
@@ -136,7 +168,7 @@ border-radius: 20px;
 border: 1px solid #000;
 background: #FFF27D;
 text-align: center;
-margin: -130px 447px 795px 400px;
+margin: -130px 447px 795px 300px;
 }
 
 .navbar .yellow{
@@ -151,7 +183,8 @@ line-height: normal;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  margin-top: 21px;
+  margin-top: 20px;
+  margin-bottom : 20px;
 }
 
 .yellow .icon{
@@ -165,7 +198,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 37px;
+  margin-top: 10px;
 }
 
 
@@ -178,25 +211,30 @@ border-radius: 20px;
 border: 1px solid #000;
 background: #FF8C8C;
 text-align: center;
-margin: -925px 447px 795px 750px;
+z-index: 2;
+margin: -925px 447px 795px 650px;
+}
+.main-kontern .red a{
+  margin-top:20px;
 }
 .navbar .red .icon{
   width: 24px;
-height: 24px;
-flex-shrink: 0;
-margin-top: 20px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom : 20px;
 }
 .red .icon{
   margin-right: 15px;
 }
 .navbar .red {
   color: #000;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
 
 }
 .navbar .red .text-one{
@@ -206,7 +244,8 @@ font-size: 36px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin-top: 20px;
+margin-left: 5px;
+margin-top: -10px;
 }
 
 
@@ -304,7 +343,7 @@ margin-right: 75px;
   border-radius: 20px;
   border: 1px solid #000;
   text-align: center;
-  margin: -750px 105px 399px 750px;
+  margin: -735px 105px 399px 650px;
 }
 
 .navbar .allert .text-one{
@@ -321,8 +360,9 @@ margin-right: 75px;
 }
 
 .navbar .allert .icon{
-  margin-top: 24px ;
+  margin-top: 10px ;
   margin-right: 15px;
+  margin-bottom : 15px;
 }
 .navbar .allert {
   width: 132px;
@@ -342,7 +382,7 @@ line-height: normal;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #000;
-  margin: -372px 50px 10px 750px;
+  margin: -372px 50px 10px 725px;
 }
 
 .navbar .Data .icon{
@@ -376,12 +416,12 @@ margin-top: 10px;
 }
 
 .main-konten .navbar .foto{
-  width: 600px;
+  width: 650px;
 height: 529px;
 flex-shrink: 0;
 border-radius: 20px;
 border: 1px solid #000;
-margin: -715px 20px 100px 57px;
+margin: -825px 20px 100px -50px;
 }
 .navbar .foto {
   width: 161px;
@@ -398,7 +438,8 @@ text-align: center;
 .navbar .foto .icon{
 
   margin-right: 20px;
-  margin-top: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .navbar .foto .text-two{
   width: 333px;
@@ -439,13 +480,20 @@ margin-top: 20px;
 margin: 0 30px 40px 290px;
 }
 .foto p{
-  width: 623px;
+  width: 10px;
 height: 0px;
+font-size : 10px;
 flex-shrink: 0;
   stroke-width: 1px;
-  color: #A3A3A3;
-  margin: 50px 0 0 -10px;
+  color: #000;
+  margin: 50px 0 0 0px;
 }
+
+
+
+
+
+
 
 .list-one{
   color: #FFF;
@@ -480,15 +528,39 @@ line-height: normal;
  text-align: center;
 
 }
-.main p{
-  margin-bottom: 10px;
-  color: #FFF;
-}
 
 .main{
   width: 100%;
   margin-top: px;
   margin: 0px 0 10px 0;
+}
+
+
+.main .item {
+  position: relative;
+  cursor: pointer;
+  margin-top : 10px;
+
+}
+.main .item a{
+  color: #FFF;
+  font-size: 9px;
+  text-decoration: none;
+  display: block;
+  padding: 2px 5px;
+  line-height: 30px;
+  margin: 0px 0 5px 0;
+
+}
+.main .item .icon {
+  margin-right: 5px;
+
+}
+
+.main{
+  width: 100%;
+  margin-top: 5px;
+  margin: -5px 0 10px 0;
 }
 .main .item {
   position: relative;
@@ -500,13 +572,28 @@ line-height: normal;
   font-size: 12px;
   text-decoration: none;
   display: block;
-  padding: 2px 5px;
+  padding: 2px 10px;
   line-height: 30px;
-  margin: 0px 0 5px 0;
+  margin: -5px 0 0 px 0;
 
 }
+
 .main .item .icon {
-  margin-right: 12px;
+  margin-right: 20px;
+  padding : 5px;
+  margin : -10px 0 0 -35px ;
+  margin-right : 20px;
+}
+.main .item .sub-item {
+  margin : 0 0 0 19px;
+}
+.main .item a.sub-item {
+  font-size : 9px;
+}
+.main .zack {
+  margin-bottom: 10px ;
+  width: 225px;
+  margin : 0 0 0 -5px;
 }
 .item a .dropdown{
   position: absolute;
@@ -516,9 +603,11 @@ line-height: normal;
   transition: 0.3s ease;
 }
 .item .sub-menu{
-  background: #142262;
   display: none;
 
+}
+ .main .item .sub-menu .sub-item:hover{
+  background-color: #142262;
 }
 .sidebar .active{
   left: 0;
@@ -526,8 +615,70 @@ line-height: normal;
 .curve_chart{
   margin: 20px 20px 40px 1000px;
 }
-    </style>
+.zack{
+font-size: 3px;
+width: 200px;
+height: 0.1px;
+background : #FFF;
+}
 
+
+.sub-menu .tohe{
+color: #000;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+.view {
+  margin-top : 5px;
+  margin-left : 5px;
+}
+.tohe .icon{
+  width: 16px;
+  height : 16px;
+  margin-right : 3px;
+}
+
+.sub-menu .toha{
+color: #000;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+.edit {
+  margin-top : 3px;
+  margin-left: 5px;
+}
+.toha .icon{
+  width: 16px;
+  height : 16px;
+  margin-right :3px;
+}
+
+.logout {
+  color: #000;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 27px;
+}
+
+
+
+
+
+
+
+
+    </style>
 
   </head>
 
@@ -546,91 +697,107 @@ line-height: normal;
                 <span class="list-two">Warga</span>
             </h1>
           </div>
-          <div class="item"><a href=""><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
+          <div class="item"><a href="{{ url('/dashboardUMKM') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
-          <p>-------------------------------------</p>
+          <p class="zack">-</p>
 
 
-          <div class="item"><a href=""><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>MEDIA PROMOSI PRODUK</a>
-          </div>
-
-          <div class="item"><a href=""><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>MEDIA TRANSAKSI</a>
-          </div>
-
-          <div class="item"><a href=""><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>KAMPUNG PASAR</a>
-          </div>
+                  <div class="item"><a href="{{ url('/dashboardUMKM/Promosi') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Promosi Produk
+                  </a>
+                  </div>
+                  <div class="item"><a href="{{ url('/dashboardUMKM/Transaksi') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Transaksi
+                  </a>
+                  </div>
+                  <div class="item"><a href="{{ url('/dashboardUMKM/Pasar') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Kampung Pasar
+                  </a>
+                  </div>
 
 
         </div>
   </div>
-    <div class="main-konten">
-        <div class="around">
-          <h1 class="strip">senin 19 desember 123</h1>
-                <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
-                </h1>
-                      <div class="drop"><a class="sub-btn">
-                        <i class="fas fa-angle-right dropdown"></i></a>
-                          <div class="sub-menu">
-                              <a href="/logout" class="sub-item">Logout</a>
+  <div class="main-konten">
+                    <div class="around">
+                      <h1 class="strip">senin 19 desember 123</h1>
+                            <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
+                            </h1>
+                                  <div class="drop"><a class="sub-btn">
+                                    <i class="fas fa-angle-right dropdown"></i></a>
+                                      <div class="sub-menu">
+
+                                      <div class="view">
+                                      <a href="{{ url('/ProUMKM') }}" class="tohe">
+                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
+                                      View Profile
+                                    </a>
+                                    </div>
+
+                                    <div class="edit">
+                                    <a href="{{ url('/ProUMKM/create') }}" class="toha">
+                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
+                                      Edit Profile
+                                    </a>
+                                    </div>
+
+                                    <div class="logout">
+                                    <a href="/logout" class="tohe">
+                                      Logout
+                                    </a>
+                                    </div>
+
+                                      </div>
+                                  </div>
+                    </div>
+
+                    <div class="navbar">
+                        <div class="green">
+                            <a><img src="{{ asset('img/123.svg') }}" alt="" class="icon">History Kedatangan Tamu</h1></a>
+                            <h1 class="text-one">{{ $jumlahData }} Orang</h1>
                           </div>
+
+                          <div class="yellow">
+                            @foreach ($tagihan as $item)                              
+                            <a><img src="{{ asset('img/what.svg') }}" alt="" class="icon">Total Tagihan Iuran</h1></a>
+                            <h1 class="text-one">{{ $item->nominal }}</h1>
+                            @endforeach
+                          </div>
+
+                          <div class="red">
+                            <a><img src="{{ asset('img/sangkuni.svg') }}" alt="" class="icon">History Pembayaran Iuran</a>
+                            <h1 class="text-one">{{ $pembayaran }} KALI BAYAR</h1>
+
+                          </div>
+
+                      <div class="allert">
+                        <a><img src="{{ asset('img/alert-circle.svg') }}" alt="" class="icon">Pengumuman</h1></a>
+                        <span>
+                            @foreach ($pengumuman as $item)                              
+                            <h1 class="text-one" align="left">Kategori : {{ $item->judul }}</h1>
+                            <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
+                            <h1 class="text-one" align="left">Isi Pengumuman :</h1>
+                            <h1 class="text-one" align="left">{{ $item->isi }}</h1>
+                            @endforeach
+                        </span>
                       </div>
-        </div>
 
-          <div class="navbar">
-          <div class="green">
-            <a><img src="{{ asset('img/123.svg') }}" alt="" class="icon">Jumlah Tamu</h1></a>
-            <h1 class="text-one">4 Orang</h1>
-          </div>
+                      <div class="foto">
+                        <a><img src="{{ asset('img/berita.svg') }}" alt="" class="icon">Berita Kampung</h1></a>
 
-          <div class="yellow">
-            <a><img src="{{ asset('img/what.svg') }}" alt="" class="icon">Jumlah Transaksi</h1></a>
-            <h1 class="text-one">Tidak Ada Tagihan Untuk Iuran</h1>
-          </div>
-
-          <div class="red">
-            <a><img src="{{ asset('img/sangkuni.svg') }}" alt="" class="icon">History Iuran</h1></a>
-            <h1 class="text-one">4 KALI BAYAR</h1>
-
-          </div>
-
-          <div class="allert">
-            <a><img src="{{ asset('img/alert-circle.svg') }}" alt="" class="icon">Pengumuman</h1></a>
-            <span>
-              <h1 class="text-one" align="left">Kategori : Kebersihan.</h1>
-              <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
-              <h1 class="text-one" align="left">Isi Pengumuman :</h1>
-              <h1 class="text-one" align="left">Diberitahukan kepada seluruh</h1>
-              <h1 class="text-one" align="left">warga bahwa pada tanggal 01</h1>
-              <h1 class="text-one" align="left">Oktober 2021 akan diadakan kerja</h1>
-              <h1 class="text-one" align="left">bakti pembersihan gorong-gorong.</h1>
-              <h1 class="text-one" align="left">dimohon kehadirannya.</h1>
-              <h1 class="text-one" align="left">terima kasih.</h1>
-            </span>
-          </div>
+                        
+                        @foreach ($berita as $item)
+                            <h1 class="text-one" align="left"><img src="{{ asset('path-to-your-image-directory/'.$item->foto) }}" alt="" class="icon"></a>
+                            <h1 class="text-tree" align="left">{{ $item->judul }}</h1>
+                            <h1 class="text-two" align="left">{{ $item->isi }} </h1>
+                            <hr>
+                        @endforeach
+                        </div>
+    
+                    </div>
 
 
-          <div class="foto">
-            <a><img src="{{ asset('img/berita.svg') }}" alt="" class="icon">Berita Kampung</h1></a>
-
-
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                <p>_______________________________________________________</p>
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                <p>_______________________________________________________</p>
-            <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-            <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-            <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-
-    </div>
-        </div>
-
-
-  </div>
+              </div>
 </div>
+</div>
+
 
 
 
@@ -653,6 +820,28 @@ line-height: normal;
            })
           })
           </script>
+          <script>
+          const deleteButton = document.getElementById("deleteButton");
+          const modal = document.getElementById("modal");
+          const confirmDelete = document.getElementById("confirmDelete");
+          const cancelDelete = document.getElementById("cancelDelete");
+
+          deleteButton.addEventListener("click", () => {
+              modal.style.display = "block";
+          });
+
+          cancelDelete.addEventListener("click", () => {
+              modal.style.display = "none";
+          });
+
+          confirmDelete.addEventListener("click", () => {
+              // Di sini Anda bisa menambahkan logika penghapusan item atau tindakan yang sesuai
+              console.log("Item deleted.");
+              modal.style.display = "none";
+          });
+          </script>
+
+
 
       </body>
 </html>

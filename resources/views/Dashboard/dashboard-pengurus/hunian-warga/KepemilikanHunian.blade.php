@@ -86,12 +86,12 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-      
+
   }
   .sidebar a {
       text-decoration: none;
   }
-  
+
 .list-nine{
   font-size: 24px;
   font-style: normal;
@@ -113,7 +113,7 @@ line-height: normal;
   position: relative;
   cursor: pointer;
   margin-top : 10px;
- 
+
 }
 .main .item a{
   color: #FFF;
@@ -138,7 +138,7 @@ line-height: normal;
 .main .item {
   position: relative;
   cursor: pointer;
- 
+
 }
 .main .item a{
   color: #FFF;
@@ -155,7 +155,7 @@ line-height: normal;
   margin-right: 20px;
   padding : 5px;
   margin : -10px 0 0 -35px ;
-  margin-right : 20px; 
+  margin-right : 20px;
 }
 .main .item .sub-item {
   margin : 0 0 0 19px;
@@ -195,13 +195,13 @@ line-height: normal;
                 margin : 30px;
                 font-family : Poppins ;
              }
-            
+
              .table {
                 background-color : #FFF;
                 font-size: 14px;
                 color: #444;
                 white-space: nowrap;
-                
+
             }
             table>thead{
                 background-color : #A8E293;
@@ -219,7 +219,7 @@ line-height: normal;
                 flex-shrink: 0;
                 padding: 10px;
             }
-            
+
             .btn-warning{
             background: #EE5353;
             width: 60px;
@@ -266,7 +266,7 @@ line-height: normal;
             line-height: normal;
             margin-left : 21px;
             margin-top : 50px;
-            
+
         }
         .nice{
             font-size: 5px;
@@ -293,7 +293,7 @@ line-height: normal;
               font-weight: 600;
               line-height: normal;
               border : 1px solid #FFF;
-              
+
             }
             .pencarian{
               width: 1050px;
@@ -335,7 +335,7 @@ line-height: normal;
           border-radius: 10px;
           text: center;
         }
-       
+
         .zaki .btn-dark{
           margin : -120px 10px 10px 720px;
           text-align: center;
@@ -343,7 +343,7 @@ line-height: normal;
         .btn-primary{
           background-color: #6471FE;
           margin: -5px 0 0 20px;
-          
+
         }
         .modal {
             display: none;
@@ -360,9 +360,9 @@ line-height: normal;
             padding: 20px;
             flex-shrink: 0;
             margin : 170px 10px 10px 500px;
-            
+
         }
-    
+
 
         .modal-kontent {
             padding: 20px;
@@ -419,7 +419,7 @@ line-height: normal;
           height: 70px;
           margin-bottom: 10px;
         }
-        
+
         .around .kanan   {
   width: 29px;
   height: 29px;
@@ -520,9 +520,9 @@ text-decoration: none;
   </head>
 
 <body>
-  
+
 <div class="container">
-  
+
 
   <div class="sidebar">
         <div class="main">
@@ -537,8 +537,8 @@ text-decoration: none;
           <div class="item"><a href="{{ url('/DashboardPengurus') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
           <p class="zack">-</p>
-          
-          
+
+
 
 
 
@@ -553,7 +553,7 @@ text-decoration: none;
                     <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
                   </div>
                   </div>
-              
+
 
 
 
@@ -567,8 +567,8 @@ text-decoration: none;
                   <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
                   </div>
               </div>
-            
-            
+
+
 
 
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/bar-chart.png') }}"alt="" class="icon"></i>Keuangan
@@ -581,8 +581,8 @@ text-decoration: none;
                   <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
                   </div>
               </div>
-            
-            
+
+
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/atm 1.png') }}"alt="" class="icon">Iuran Warga
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
@@ -591,10 +591,10 @@ text-decoration: none;
                   <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
                   <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
                   <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
-                  </div>               
+                  </div>
               </div>
-            
-            
+
+
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/shield.png') }}"alt="" class="icon"></i>Keamanan
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
@@ -605,20 +605,20 @@ text-decoration: none;
                   <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
                   </div>
                 </div>
-            
-            
+
+
                 <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
 
                 </a>
                 </div>
-                
+
                 <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
-             
+
                 </a>
                 </div>
 
                 <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
-                  
+
                 </a>
                 </div>
                 <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
@@ -626,7 +626,7 @@ text-decoration: none;
                   </div>
 
                   <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
-               
+
                   </a>
                   </div>
                   <div class="item"><a class="sub-btn"><img src="{{ asset('img/tul.svg') }}"alt="" class="icon"></i>Manajemen Akun
@@ -637,35 +637,21 @@ text-decoration: none;
                   <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
                   </div>
                 </div>
-            
-                  
+
+
         </div>
-  </div> 
+  </div>
     <div class="main-konten">
         <div class="around">
             <div class="strip" id="liveTime"></div>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
-                                    <i class="fas fa-angle-right dropdown"></i></a>      
+                                    <i class="fas fa-angle-right dropdown"></i></a>
                                       <div class="sub-menu">
-                                  
-                                      <div class="view">
-                                      <a href="{{ url('/Profile') }}" class="tohe">
-                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
-                                      View Profile
-                                    </a>
-                                    </div>
-
-                                    <div class="edit">
-                                    <a href="{{ url('/Profile/create') }}" class="toha">
-                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
-                                      Edit Profile
-                                    </a>
-                                    </div>
 
                                     <div class="logout">
-                                    <a href="/home" class="tohe">
+                                    <a href="/logout" class="tohe">
                                       Logout
                                     </a>
                                     </div>
@@ -734,7 +720,7 @@ text-decoration: none;
   </div>
 </div>
 
- 
+
 
 
 
@@ -783,16 +769,16 @@ text-decoration: none;
                 var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
                 var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
                 var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
-        
+
                 document.getElementById('liveTime').innerText = currentTime;
             }
-        
+
             setInterval(updateClock, 1000); // Perbarui setiap detik
             updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
         </script>
-          
-          
-          
+
+
+
       </body>
 </html>
-        
+

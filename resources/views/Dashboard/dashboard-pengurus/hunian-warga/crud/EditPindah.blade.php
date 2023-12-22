@@ -478,7 +478,7 @@ text-decoration: none;
 <div class="container">
 
 
-  <div class="sidebar">
+    <div class="sidebar">
         <div class="main">
 
           <div class="list-nine">
@@ -500,11 +500,11 @@ text-decoration: none;
                   <i class="fas fa-angle-right dropdown"></i>
                 </a>
                   <div class="sub-menu">
-                    <a href="{{ url('/Hunian') }}" class="sub-item">Data Hunian</a>
-                    <a href="{{ url('/Warga') }}" class="sub-item">Data Warga</a>
-                    <a href="{{ url('/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
-                    <a href="{{ url('/PindahHunian') }}" class="sub-item">Keluarga Pindah Hunian</a>
-                    <a href="{{ url('/Kepemilikan') }}" class="sub-item">Kepemilikan hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DataHunian') }}" class="sub-item">Data Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DaraWarga') }}" class="sub-item">Data Warga</a>
+                    <a href="{{ url('/dashboardPengurus/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
+                    <a href="{{ url('/dashboardPengurus/DataPindah') }}" class="sub-item">Keluarga Pindah Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
                   </div>
                   </div>
 
@@ -516,9 +516,9 @@ text-decoration: none;
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/PerKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
-                  <a href="{{ url('/JabKepengurusan') }}" class="sub-item">Jabatan Kepengurusan</a>
-                  <a href="{{ url('/DatPengurus') }}" class="sub-item">Data Pengurus</a>
+                  <a href="{{ url('/dashboardPengurus/PeriodeKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Jabatan') }}" class="sub-item">Jabatan Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
                   </div>
               </div>
 
@@ -529,11 +529,10 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Databank') }}" class="sub-item">Data Bank</a>
-                  <a href="{{ url('/Posbiaya') }}" class="sub-item">Pos Biaya</a>
-                  <a href="{{ url('/Rekeningbank') }}" class="sub-item">Rekening Bank</a>
-                  <a href="{{ url('/Datakas') }}" class="sub-item">Data Kas</a>
-                  <a href="{{ url('/KeuanganLaporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/Databank') }}" class="sub-item">Data Bank</a>
+                  <a href="{{ url('/dashboardPengurus/Posbiaya') }}" class="sub-item">Pos Biaya</a>
+                  <a href="{{ url('/dashboardPengurus/RekeningBank') }}" class="sub-item">Rekening Bank</a>
+                  <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
                   </div>
               </div>
 
@@ -542,10 +541,10 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Dataiuran') }}" class="sub-item">Data Iuran</a>
-                  <a href="{{ url('/Terimaiuran') }}" class="sub-item">Terima Iuran</a>
-                  <a href="{{ url('/Laporaniuran') }}" class="sub-item">Laporan</a>
-                  <a href="{{ url('/IngatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
+                  <a href="{{ url('/dashboardPengurus/Iuran') }}" class="sub-item">Data Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
                   </div>
               </div>
 
@@ -554,60 +553,56 @@ text-decoration: none;
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
-                  <a href="{{ url('/DataSatpam') }}" class="sub-item">Data Satpam</a>
-                  <a href="{{ url('/JadwalJaga') }}" class="sub-item">Jadwal Jaga</a>
-                  <a href="{{ url('/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
+                  <a href="{{ url('/dashboardPengurus/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
+                  <a href="{{ url('/dashboardPengurus/DataSatpam') }}" class="sub-item">Data Satpam</a>
+                  <a href="{{ url('/dashboardPengurus/DataJadwal') }}" class="sub-item">Jadwal Jaga</a>
+                  <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
                   </div>
                 </div>
 
 
-                <div  class="item"><a href="{{ url('/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
+                <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
 
                 </a>
                 </div>
 
-                <div class="item"><a href="{{ url('/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+                <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
 
                 </a>
                 </div>
 
-                <div class="item"><a href="{{ url('/Evoting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
+                <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
 
                 </a>
                 </div>
-                <div class="item"><a href="{{ url('/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+                <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
                   </a>
                   </div>
 
-                  <div class="item"><a href="{{ url('/BeritaKampung') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
+                  <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
 
                   </a>
                   </div>
+                  <div class="item"><a class="sub-btn"><img src="{{ asset('img/tul.svg') }}"alt="" class="icon"></i>Manajemen Akun
+                <i class="fas fa-angle-right dropdown"></i>
+              </a>
+                <div class="sub-menu">
+                  <a href="{{ url('/dashboardPengurus/Users') }}" class="sub-item">User</a>
+                  <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
+                  </div>
+                </div>
+
+
         </div>
   </div>
   <div class="main-konten">
         <div class="around">
-          <h1 class="strip">senin 19 desember | 11:39</h1>
+            <div class="strip" id="liveTime"></div>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
                                     <i class="fas fa-angle-right dropdown"></i></a>
                                       <div class="sub-menu">
-
-                                      <div class="view">
-                                      <a href="Profile" class="tohe">
-                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
-                                      View Profile
-                                    </a>
-                                    </div>
-
-                                    <div class="edit">
-                                    <a href="Profile/create" class="toha">
-                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
-                                      Edit Profile
-                                    </a>
-                                    </div>
 
                                     <div class="logout">
                                     <a href="#" class="tohe">
@@ -747,79 +742,21 @@ text-decoration: none;
                         radioButton.addEventListener('change', toggleHunianBaru);
                     });
                 </script>
+          <script>
+            function updateClock() {
+                var now = new Date();
+                var day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+                var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+                var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+                var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
+
+                document.getElementById('liveTime').innerText = currentTime;
+            }
+
+            setInterval(updateClock, 1000); // Perbarui setiap detik
+            updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
+        </script>
 
 
       </body>
 </html>
-                    {{-- <form action="{{ url('/dashboardPengurus/DataPindah/'.$data->id) }}" method="POST">
-                        @csrf
-                        @method('PUT')
-
-                        <div class="form-group">
-                            <label for="warga_id">Pilih Nama:</label>
-                            <select name="warga_id" id="warga_id" class="form-control">
-                                <option value="">Pilih Nama</option>
-                                @foreach ($warga as $wargaItem)
-                                    <option value="{{ $wargaItem->id }}" {{ $data->warga_id == $wargaItem->id ? 'selected' : '' }}>{{ $wargaItem->nama }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="alasan">Alasan Pindah:</label>
-                            <input type="text" name="alasan" id="alasan" value="{{ $data->alasan }}" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal">Tanggal Pindah:</label>
-                            <input type="date" name="tanggal" id="tanggal" value="{{ $data->tanggal }}" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="hunian_asal">Hunian Asal:</label>
-                            <input type="text" name="hunian_asal" id="hunian_asal" value="{{ $data->hunian_asal }}" class="form-control">
-                        </div>
-                        <span class="d-inline-flex">
-                                <div class="form-check mb-3">
-                                    <input type="radio" name="jenis_pindah" id="pindah_dalam" value="Pindah Dalam Hunian" class="form-check-input">
-                                    <label for="pindah_dalam" class="form-check-label">Pindah Dalam Hunian</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="radio" name="jenis_pindah" id="pindah_keluar" value="Pindah Keluar Hunian" class="form-check-input">
-                                    <label for="pindah_keluar" class="form-check-label">Pindah Keluar Hunian</label>
-                                </div>
-                        </span>
-                        <div class="form-group mb-3" id="hunian_baru" style="display: none;">
-                            <label for="hunian_id">Pilih Alamat Hunian Baru:</label>
-                            <select name="hunian_id" id="hunian_id" class="form-control">
-                                <option value="">Pilih Alamat Hunian Baru</option>
-                                @foreach ($hunian as $hunianItem)
-                                    <option value="{{ $hunianItem->id }}" {{ $data->hunian_id == $hunianItem->id ? 'selected' : '' }}>{{ $hunianItem->alamat }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="mb-3 ">
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </div>
-                    </form>
-                    <!-- AKHIR FORM -->
-                </main>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-                <script>
-                    // Fungsi untuk menampilkan atau menyembunyikan atribut alamat Hunian Baru
-                    function toggleHunianBaru() {
-                        var jenisPindah = document.querySelector('input[name="jenis_pindah"]:checked').value;
-                        var hunianBaru = document.getElementById('hunian_baru');
-
-                        if (jenisPindah === 'Pindah Dalam Hunian') {
-                            hunianBaru.style.display = 'block';
-                        } else {
-                            hunianBaru.style.display = 'none';
-                        }
-                    }
-
-                    // Tambahkan event listener pada radio button
-                    var radioButtons = document.querySelectorAll('input[name="jenis_pindah"]');
-                    radioButtons.forEach(function(radioButton) {
-                        radioButton.addEventListener('change', toggleHunianBaru);
-                    });
-                </script>
-            </body>
-            </html> --}}

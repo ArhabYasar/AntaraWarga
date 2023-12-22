@@ -87,12 +87,12 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-      
+
   }
   .sidebar a {
       text-decoration: none;
   }
-  
+
 .list-nine{
   font-size: 24px;
   font-style: normal;
@@ -114,7 +114,7 @@ line-height: normal;
   position: relative;
   cursor: pointer;
   margin-top : 10px;
- 
+
 }
 .main .item a{
   color: #FFF;
@@ -139,7 +139,7 @@ line-height: normal;
 .main .item {
   position: relative;
   cursor: pointer;
- 
+
 }
 .main .item a{
   color: #FFF;
@@ -156,7 +156,7 @@ line-height: normal;
   margin-right: 20px;
   padding : 5px;
   margin : -10px 0 0 -35px ;
-  margin-right : 20px; 
+  margin-right : 20px;
 }
 .main .item .sub-item {
   margin : 0 0 0 19px;
@@ -196,13 +196,13 @@ line-height: normal;
                 margin : 30px;
                 font-family : Poppins ;
              }
-            
+
              .table {
                 background-color : #FFF;
                 font-size: 14px;
                 color: #444;
                 white-space: nowrap;
-                
+
             }
             table>thead{
                 background-color : #A8E293;
@@ -220,7 +220,7 @@ line-height: normal;
                 flex-shrink: 0;
                 padding: 10px;
             }
-            
+
             .btn-warning{
             background: #EE5353;
             width: 60px;
@@ -267,7 +267,7 @@ line-height: normal;
             line-height: normal;
             margin-left : 21px;
             margin-top : 50px;
-            
+
         }
         .nice{
             font-size: 5px;
@@ -294,7 +294,7 @@ line-height: normal;
               font-weight: 600;
               line-height: normal;
               border : 1px solid #FFF;
-              
+
             }
             .pencarian{
               width: 1050px;
@@ -336,7 +336,7 @@ line-height: normal;
           border-radius: 10px;
           text: center;
         }
-       
+
         .zaki .btn-dark{
           margin : -120px 10px 10px 720px;
           text-align: center;
@@ -344,7 +344,7 @@ line-height: normal;
         .btn-primary{
           background-color: #6471FE;
           margin: -5px 0 0 20px;
-          
+
         }
         .modal {
     display: none;
@@ -356,7 +356,7 @@ line-height: normal;
     height: 100%;
                 background-color: rgba(0,0,0,0.4);
         }
-    
+
 .modal-content {
     border-radius: 15px;
     border: 1px solid #000;
@@ -366,7 +366,7 @@ line-height: normal;
     flex-shrink: 0;
     width: 800px;
     height: 200px;
-    
+
 }
 .modal-content {
   columns: auto; /* Menggunakan auto untuk membiarkan browser memutuskan jumlah kolom */
@@ -408,10 +408,10 @@ line-height: normal;
 
 .close {
     position: absolute;
-    bottom: -20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 30px; 
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
     height: 30px;
    display : none;
     top: 10px; /* Sesuaikan posisi vertikal */
@@ -449,7 +449,7 @@ line-height: normal;
     column-gap: 20px; /* Jarak antar kolom jika diperlukan */
 
 }
-        
+
 .modal1 {
             display: none;
             position: fixed;
@@ -465,9 +465,9 @@ line-height: normal;
             padding: 20px;
             flex-shrink: 0;
             margin : 170px 10px 10px 500px;
-            
+
         }
-    
+
 
         .modal-two {
             padding: 20px;
@@ -622,11 +622,11 @@ text-decoration: none;
   </head>
 
 <body>
-  
-<div class="container">
-  
 
-  <div class="sidebar">
+<div class="container">
+
+
+    <div class="sidebar">
         <div class="main">
 
           <div class="list-nine">
@@ -639,8 +639,8 @@ text-decoration: none;
           <div class="item"><a href="{{ url('/DashboardPengurus') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
           <p class="zack">-</p>
-          
-          
+
+
 
 
 
@@ -648,14 +648,14 @@ text-decoration: none;
                   <i class="fas fa-angle-right dropdown"></i>
                 </a>
                   <div class="sub-menu">
-                    <a href="{{ url('/Hunian') }}" class="sub-item">Data Hunian</a>
-                    <a href="{{ url('/Warga') }}" class="sub-item">Data Warga</a>
-                    <a href="{{ url('/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
-                    <a href="{{ url('/PindahHunian') }}" class="sub-item">Keluarga Pindah Rumah</a>
-                    <a href="{{ url('/Kepemilikan') }}" class="sub-item">Kepemilikan hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DataHunian') }}" class="sub-item">Data Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/DaraWarga') }}" class="sub-item">Data Warga</a>
+                    <a href="{{ url('/dashboardPengurus/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
+                    <a href="{{ url('/dashboardPengurus/DataPindah') }}" class="sub-item">Keluarga Pindah Hunian</a>
+                    <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
                   </div>
                   </div>
-              
+
 
 
 
@@ -664,108 +664,93 @@ text-decoration: none;
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/PerKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
-                  <a href="{{ url('/JabKepengurusan') }}" class="sub-item">Jabatan Kepengurusan</a>
-                  <a href="{{ url('/DatPengurus') }}" class="sub-item">Data Pengurus</a>
+                  <a href="{{ url('/dashboardPengurus/PeriodeKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Jabatan') }}" class="sub-item">Jabatan Kepengurusan</a>
+                  <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
                   </div>
               </div>
-            
-            
+
+
 
 
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/bar-chart.png') }}"alt="" class="icon"></i>Keuangan
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Databank') }}" class="sub-item">Data Bank</a>
-                  <a href="{{ url('/Posbiaya') }}" class="sub-item">Pos Biaya</a>
-                  <a href="{{ url('/Rekeningbank') }}" class="sub-item">Rekening Bank</a>
-                  <a href="{{ url('/Datakas') }}" class="sub-item">Data Kas</a>
-                  <a href="{{ url('/KeuanganLaporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/Databank') }}" class="sub-item">Data Bank</a>
+                  <a href="{{ url('/dashboardPengurus/Posbiaya') }}" class="sub-item">Pos Biaya</a>
+                  <a href="{{ url('/dashboardPengurus/RekeningBank') }}" class="sub-item">Rekening Bank</a>
+                  <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
                   </div>
               </div>
-            
-            
+
+
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/atm 1.png') }}"alt="" class="icon">Iuran Warga
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/Dataiuran') }}" class="sub-item">Data Iuran</a>
-                  <a href="{{ url('/Terimaiuran') }}" class="sub-item">Terima Iuran</a>
-                  <a href="{{ url('/Laporaniuran') }}" class="sub-item">Laporan</a>
-                  <a href="{{ url('/IngatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
-                  </div>               
+                  <a href="{{ url('/dashboardPengurus/Iuran') }}" class="sub-item">Data Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
+                  <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
+                  </div>
               </div>
-            
-            
+
+
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/shield.png') }}"alt="" class="icon"></i>Keamanan
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
-                  <a href="{{ url('/DataSatpam') }}" class="sub-item">Data Satpam</a>
-                  <a href="{{ url('/JadwalJaga') }}" class="sub-item">Jadwal Jaga</a>
-                  <a href="{{ url('/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
+                  <a href="{{ url('/dashboardPengurus/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
+                  <a href="{{ url('/dashboardPengurus/DataSatpam') }}" class="sub-item">Data Satpam</a>
+                  <a href="{{ url('/dashboardPengurus/DataJadwal') }}" class="sub-item">Jadwal Jaga</a>
+                  <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
                   </div>
                 </div>
-            
-            
-                <div  class="item"><a href="{{ url('/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
+
+
+                <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
 
                 </a>
                 </div>
-                
-                <div class="item"><a href="{{ url('/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
-             
+
+                <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+
                 </a>
                 </div>
 
-                <div class="item"><a href="{{ url('/Evoting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
-                  
+                <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
+
                 </a>
                 </div>
-                <div class="item"><a href="{{ url('/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+                <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
                   </a>
                   </div>
 
-                  <div class="item"><a href="{{ url('/BeritaKampung') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
-               
+                  <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
+
                   </a>
                   </div>
                   <div class="item"><a class="sub-btn"><img src="{{ asset('img/tul.svg') }}"alt="" class="icon"></i>Manajemen Akun
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/ManajemenUser') }}" class="sub-item">User</a>
-                  <a href="{{ url('/Manajemen') }}" class="sub-item">Role</a>
+                  <a href="{{ url('/dashboardPengurus/Users') }}" class="sub-item">User</a>
+                  <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
                   </div>
                 </div>
-            
-                  
+
+
         </div>
-  </div> 
+  </div>
     <div class="main-konten">
         <div class="around">
-          <h1 class="strip">senin 19 desember | 11:41</h1>
+            <div class="strip" id="liveTime"></div>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
-                                    <i class="fas fa-angle-right dropdown"></i></a>      
+                                    <i class="fas fa-angle-right dropdown"></i></a>
                                       <div class="sub-menu">
-                                  
-                                      <div class="view">
-                                      <a href="{{ url('/Profile') }}" class="tohe">
-                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
-                                      View Profile
-                                    </a>
-                                    </div>
-
-                                    <div class="edit">
-                                    <a href="{{ url('/Profile/create') }}" class="toha">
-                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
-                                      Edit Profile
-                                    </a>
-                                    </div>
 
                                     <div class="logout">
                                     <a href="#" class="tohe">
@@ -846,7 +831,7 @@ text-decoration: none;
   </div>
 </div>
 
- 
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
@@ -907,8 +892,22 @@ text-decoration: none;
               console.log("Item deleted.");
               modal1.style.display = "none";
           });
-          </script>         
-          
-          
+          </script>
+          <script>
+            function updateClock() {
+                var now = new Date();
+                var day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+                var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+                var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+                var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
+
+                document.getElementById('liveTime').innerText = currentTime;
+            }
+
+            setInterval(updateClock, 1000); // Perbarui setiap detik
+            updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
+        </script>
+
+
       </body>
 </html>

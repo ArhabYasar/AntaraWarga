@@ -1,3 +1,3 @@
-<div class="right message">
-    <p>{{$message}}</p>
+<div class="message sent">
+   <p>{{$message}}</p>
 </div>

@@ -80,7 +80,6 @@ class TamuController extends Controller
      */
     public function show(string $id)
     {
-        //
     }
 
     /**

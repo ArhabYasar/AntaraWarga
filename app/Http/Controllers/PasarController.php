@@ -65,11 +65,19 @@ class PasarController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function showDetailPasar(string $id)
     {
-        //
+        $data = Pasar::find($id);
+    
+        // Periksa apakah data ditemukan
+        if ($data) {
+            return view('Dashboard.dashboard-umkm.DetailPasar', compact('data'));
+        } else {
+            // Tampilkan pesan atau lakukan sesuatu jika data tidak ditemukan
+            return redirect()->route('/dashboardUMKM/Pasar')->with('error', 'Data Pasar tidak ditemukan');
+        }
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      */

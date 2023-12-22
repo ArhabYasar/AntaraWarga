@@ -189,6 +189,7 @@ line-height: normal;
 
         table{
                 box-sizing: border-box;
+
              }
 
              body{
@@ -219,6 +220,7 @@ line-height: normal;
                 flex-shrink: 0;
                 padding: 10px;
             }
+
 
             .btn-warning{
             background: #EE5353;
@@ -274,7 +276,7 @@ line-height: normal;
             height: 0.1px;
             background : #000;
             margin-top : 5px;
-            margin-bottom : 10px;
+            margin-bottom : 60px;
             margin-left: 21px;
         }
         .Data .btn-warning{
@@ -309,6 +311,7 @@ line-height: normal;
               width: 200px;
               height: 0.1px;
               background : #FFF;
+              margin-bottom: 20px;
             }
 
             .pencarian .form-control {
@@ -346,85 +349,6 @@ line-height: normal;
 
         }
         .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-
-
-
-.modal-content {
-    border-radius: 35px;
-    border: 3px solid #000;
-    background: #FFF;
-    margin: 15% auto;
-    padding: 20px;
-    width: 522px;
-    height: 239px;
-    flex-shrink: 0;
-    width: 340px;
-    height: 200px;
-
-}
-.modal-content p {
-    margin: 35px 0 0 0 ; /* Hapus margin bawah pada paragraf */
-    line-height: 1.5; /* Tinggi baris untuk meningkatkan bacaan */
-    text-align: left;
-}
-.sow {
-    position: absolute;
-    top: 5px; /* Jarak vertikal dari atas */
-    left: 50%; /* Posisi horizontal di tengah */
-    transform: translateX(-50%); /* Pusatkan horisontal */
-    background-color: white; /* Latar belakang agar teks lebih terlihat */
-    padding: 5px 10px; /* Padding untuk estetika */
-
-}
-
-.close {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-   display : none;
-    top: 10px; /* Sesuaikan posisi vertikal */
-    right: 10px; /* Sesuaikan posisi horizontal */
-    font-size: 24px; /* Sesuaikan ukuran huruf tombol close */
-}
-
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-        .kick{
-  margin-left: 100px;
-  margin-right: 6px;
-}
-.slow{
-  margin-left: 79px;
-  margin-right: 10px;
-}
-.denim{
-  margin-left: 31px;
-  margin-right: 10px;
-}
-.sid{
-  margin-left: 62px;
-  margin-right: 10px;
-}
-
-.modal1 {
             display: none;
             position: fixed;
             top: 0;
@@ -443,7 +367,7 @@ line-height: normal;
         }
 
 
-        .modal-two {
+        .modal-kontent {
             padding: 20px;
             border-radius: 5px;
             text-align: center;
@@ -493,11 +417,12 @@ line-height: normal;
           margin : -40px 10px 10px 220px;
 
         }
-        .modal1 .icon{
+        .modal .icon{
           width: 70px;
           height: 70px;
           margin-bottom: 10px;
         }
+
         .around .kanan   {
   width: 29px;
   height: 29px;
@@ -592,6 +517,7 @@ text-decoration: none;
 }
 
 
+
     </style>
 
   </head>
@@ -601,7 +527,7 @@ text-decoration: none;
 <div class="container">
 
 
-    <div class="sidebar">
+  <div class="sidebar">
         <div class="main">
 
           <div class="list-nine">
@@ -611,7 +537,7 @@ text-decoration: none;
                 <span class="list-two">Warga</span>
             </h1>
           </div>
-          <div class="item"><a href="{{ url('/DashboardPengurus') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
+          <div class="item"><a href="{{ url('/DashboardUMKM') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
           <p class="zack">-</p>
 
@@ -619,113 +545,41 @@ text-decoration: none;
 
 
 
-          <div class="item"><a class="sub-btn"><img src="{{ asset('img/home.png') }}"alt="" class="icon"></i>Hunian & Warga
-                  <i class="fas fa-angle-right dropdown"></i>
-                </a>
-                  <div class="sub-menu">
-                    <a href="{{ url('/dashboardPengurus/DataHunian') }}" class="sub-item">Data Hunian</a>
-                    <a href="{{ url('/dashboardPengurus/DaraWarga') }}" class="sub-item">Data Warga</a>
-                    <a href="{{ url('/dashboardPengurus/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
-                    <a href="{{ url('/dashboardPengurus/DataPindah') }}" class="sub-item">Keluarga Pindah Hunian</a>
-                    <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
-                  </div>
-                  </div>
-
-
-
-
-
-                  <div class="item"><a class="sub-btn"><img src="{{ asset('img/users.png') }}"alt="" class="icon"></i>Kepengurusan
-                    <i class="fas fa-angle-right dropdown"></i>
-                  </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/PeriodeKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
-                  <a href="{{ url('/dashboardPengurus/Jabatan') }}" class="sub-item">Jabatan Kepengurusan</a>
-                  <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
-                  </div>
-              </div>
-
-
-
-
-              <div class="item"><a class="sub-btn"><img src="{{ asset('img/bar-chart.png') }}"alt="" class="icon"></i>Keuangan
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/Databank') }}" class="sub-item">Data Bank</a>
-                  <a href="{{ url('/dashboardPengurus/Posbiaya') }}" class="sub-item">Pos Biaya</a>
-                  <a href="{{ url('/dashboardPengurus/RekeningBank') }}" class="sub-item">Rekening Bank</a>
-                  <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
-                  </div>
-              </div>
-
-
-              <div class="item"><a class="sub-btn"><img src="{{ asset('img/atm 1.png') }}"alt="" class="icon">Iuran Warga
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/Iuran') }}" class="sub-item">Data Iuran</a>
-                  <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
-                  <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
-                  <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
-                  </div>
-              </div>
-
-
-              <div class="item"><a class="sub-btn"><img src="{{ asset('img/shield.png') }}"alt="" class="icon"></i>Keamanan
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
-                  <a href="{{ url('/dashboardPengurus/DataSatpam') }}" class="sub-item">Data Satpam</a>
-                  <a href="{{ url('/dashboardPengurus/DataJadwal') }}" class="sub-item">Jadwal Jaga</a>
-                  <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
-                  </div>
-                </div>
-
-
-                <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
-
-                </a>
-                </div>
-
-                <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
-
-                </a>
-                </div>
-
-                <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
-
-                </a>
-                </div>
-                <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+          <div class="item"><a href="{{ url('/MediaPP') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Promosi Produk
                   </a>
                   </div>
-
-                  <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
-
+                  <div class="item"><a href="{{ url('/MediaTransaksi') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Media Transaksi
                   </a>
                   </div>
-                  <div class="item"><a class="sub-btn"><img src="{{ asset('img/tul.svg') }}"alt="" class="icon"></i>Manajemen Akun
-                <i class="fas fa-angle-right dropdown"></i>
-              </a>
-                <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/Users') }}" class="sub-item">User</a>
-                  <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
+                  <div class="item"><a href="{{ url('/KampungPasar') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>Kampung Pasar
+                  </a>
                   </div>
-                </div>
 
 
         </div>
   </div>
     <div class="main-konten">
         <div class="around">
-            <div class="strip" id="liveTime"></div>
+          <h1 class="strip">senin 19 desember | 11:34</h1>
           <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
                                     <i class="fas fa-angle-right dropdown"></i></a>
                                       <div class="sub-menu">
+
+                                      <div class="view">
+                                      <a href="{{ url('/ProUMKM') }}" class="tohe">
+                                      <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
+                                      View Profile
+                                    </a>
+                                    </div>
+
+                                    <div class="edit">
+                                    <a href="{{ url('/ProUMKM/create') }}" class="toha">
+                                      <img src="{{ asset('img/ur.svg') }}" alt="Edit Profile" class="icon">
+                                      Edit Profile
+                                    </a>
+                                    </div>
 
                                     <div class="logout">
                                     <a href="#" class="tohe">
@@ -736,25 +590,17 @@ text-decoration: none;
                                       </div>
                             </div>
 
-                <p class="Data">RUMAH KOSONG<a href="{{ url('/dashboardPengurus/RumahKosong/create') }}" class="btn btn-primary">Tambah Data</a></p>
+                <p class="Data">MEDIA TRANSAKSI - DETAIl</p>
                 <p class="nice">-</p>
-
-                <div class="pencarian">
-                    <form action="{{ url('/dashboardPengurus/RumahKosong') }}" method="get">
-                        <input type="search" class="form-control" name="cari" value="{{ Request::get('cari') }}" id="pengarang" >
-                        <img src="{{ asset('img/pencarian.svg') }}"alt="" class="icon">
-                        <div class="zaki"><a href="" class="btn btn-dark">Cari</a></p></div>
-                    </form>
-                </div>
         <div class="table">
             <table>
                 <thead>
                     <tr>
                     <th class= "col-sm-1">No</th>
-                    <th>Hunian</th>
-                        <th>Pemilik</th>
-                        <th>Tanggal Mulai Kosong</th>
-                        <th>Aksi</th>
+                        <th>Metode Pembayaran</th>
+                        <th>Tanggal</th>
+                        <th>Nominal</th>
+                        <th>Status Transaksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -762,49 +608,15 @@ text-decoration: none;
                     @foreach ($data as $item)
                     <tr>
                         <td>{{ $i }}</td>
-                        @if ($item->getHunian) <!-- Periksa apakah hunian tersedia -->
-                            <td>{{ $item->getHunian->alamat }}</td>
-                        @else
-                            <td>-</td>
-                        @endif
-                        @if ($item->getWarga) <!-- Periksa apakah hunian tersedia -->
-                            <td>{{ $item->getWarga->nama }}</td>
-                        @else
-                            <td>-</td>
-                        @endif
+                        <td>{{ $item->metode }}</td>
                         <td>{{ $item->tanggal }}</td>
-                        <td>
-                        <button id="openModalBtn" data-bs-toggle="modal" data-bs-target="#openModalBtn{{ $item->id }}"  class="btn btn-warning btn-sm">Detail</button>
-
-                            <div id="openModalBtn{{ $item->id }}" class="modal">
-                              <div class="modal-content">
-                                <b class="sow"> Detail Rumah Kosong </b>
-                                <span class="close" id="closeModalBtn">&times;</span>
-                                <p> Hunian<span class="kick">:</span> {{ $item->getHunian->alamat }}<br>
-                                    Penghuni <span class="slow">:</span>{{ $item->getWarga->nama }}<br>
-                                    Tanggal Kosong   <span class="denim">:</span>{{ $item->tanggal }}<br>
-                                    Keterangan <span class="sid">:</span>{{ $item->keterangan }}</p>
-                              </div>
-                            </div>
-                            <a href='{{ url('/dashboardPengurus/RumahKosong/'.$item->id.'/edit') }}' class="btn btn-warning btn-sm">Edit</a>
-                            <form action="{{ url('/dashboardPengurus/RumahKosong/'.$item->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class ="btn btn-danger btn-sm" id="deleteButton" >Hapus</button>
-                            </form>
-                            <div id="modal1" class="modal1">
-                                <div class="modal-two">
-                                <img src="{{ asset('img/huai.png') }}" alt="" class="icon">
-                                    <p>Anda yakin akan menghapus data tersebut?</p>
-                                    <button id="confirmDelete">YA</button>
-                                    <button id="cancelDelete">Batal</button>
-                        </td>
+                        <td>{{ $item->nominal }}</td>
+                        <td>{{ $item->status }}</td>
                     </tr>
                     <?php $i++ ?>
                     @endforeach
-                 </tbody>
-             </table>
-            {{ $data->withQueryString()->links() }}
+                </tbody>
+            </table>
         </div>
   </div>
 </div>
@@ -813,7 +625,7 @@ text-decoration: none;
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
           <script>
            $(document).ready(function(){
@@ -832,60 +644,26 @@ text-decoration: none;
           })
           </script>
           <script>
-          document.addEventListener("DOMContentLoaded", function () {
-  const openModalBtn = document.getElementById("openModalBtn");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const modal = document.getElementById("myModal");
-
-  openModalBtn.addEventListener("click", function () {
-    modal.style.display = "block";
-  });
-
-  closeModalBtn.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-});
-</script>
-<script>
           const deleteButton = document.getElementById("deleteButton");
-          const modal = document.getElementById("modal1");
+          const modal = document.getElementById("modal");
           const confirmDelete = document.getElementById("confirmDelete");
           const cancelDelete = document.getElementById("cancelDelete");
 
           deleteButton.addEventListener("click", () => {
-              modal1.style.display = "block";
+              modal.style.display = "block";
           });
 
           cancelDelete.addEventListener("click", () => {
-              modal1.style.display = "none";
+              modal.style.display = "none";
           });
 
           confirmDelete.addEventListener("click", () => {
               // Di sini Anda bisa menambahkan logika penghapusan item atau tindakan yang sesuai
               console.log("Item deleted.");
-              modal1.style.display = "none";
+              modal.style.display = "none";
           });
           </script>
-          <script>
-            function updateClock() {
-                var now = new Date();
-                var day = now.toLocaleDateString('id-ID', { weekday: 'long' });
-                var date = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
-                var time = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-                var currentTime = day + ' | ' + date + ' | ' + time + ' WIB';
 
-                document.getElementById('liveTime').innerText = currentTime;
-            }
-
-            setInterval(updateClock, 1000); // Perbarui setiap detik
-            updateClock(); // Agar waktu ditampilkan segera setelah halaman dimuat
-        </script>
 
 
       </body>

@@ -153,7 +153,7 @@ font-size: 36px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-}
+} 
 .navbar .green .text-one{
   margin-top: -10px;
 }
@@ -259,13 +259,14 @@ border-radius: 20px;
 border: 1px solid #000;
 background: #FF8C8C;
 text-align: center;
-margin: -925px 447px 795px 750px;
+margin: -925px 447px 795px 640px;
 }
-.navbar .pink .icon{
+.navbar .pink  .icon {
   width: 24px;
-height: 24px;
-flex-shrink: 0;
-margin-top: 20px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom : 20px;
 }
 .pink .icon{
   margin-right: 15px;
@@ -285,7 +286,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin-top: 22px;
+margin-top: -10px;
 margin-right: 50px;
 }
 .navbar .pink .text-two{
@@ -295,7 +296,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin-top: 6px;
+margin-top: -5px;
 margin-right: 75px;
 }
 .navbar .pink .text-tree{
@@ -305,7 +306,7 @@ margin-right: 75px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: -16px 0 0 60px;
+  margin: -28px 0 0 60px;
 
 }
 .navbar .pink .text-four{
@@ -315,7 +316,7 @@ margin-right: 75px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: -15px 10px 10px 100px;
+  margin: -20px 10px 10px 120px;
 }
 .navbar .pink .text-five{
   color: #403F3F;
@@ -324,7 +325,7 @@ margin-right: 75px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: -17px 10px 10px 70px;
+  margin: -30px 10px 10px 70px;
 }
 .navbar .pink .text-six{
   color: #403F3F;
@@ -333,7 +334,7 @@ margin-right: 75px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: -25px 10px 10px 95px;
+  margin: -30px 10px 10px 115px;
 }
 
 .main-konten .navbar .allert{
@@ -347,7 +348,7 @@ margin-right: 75px;
 }
 
 .navbar .allert .text-one{
-
+  
   flex-shrink: 0;
   color: #403F3F;
   font-family: Poppins;
@@ -382,12 +383,14 @@ line-height: normal;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #000;
-  margin: -372px 50px 10px 725px;
+  margin: -390px 105px 399px 650px;
 }
 
 .navbar .Data .icon{
   margin-right: 14px;
   margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 .navbar .Data{
   width: 101.895px;
@@ -436,7 +439,7 @@ line-height: normal;
 text-align: center;
 }
 .navbar .foto .icon{
-
+  
   margin-right: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -513,12 +516,12 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-
+      
   }
   .sidebar a {
       text-decoration: none;
   }
-
+  
 .list-nine{
   font-size: 24px;
   font-style: normal;
@@ -540,7 +543,7 @@ line-height: normal;
   position: relative;
   cursor: pointer;
   margin-top : 10px;
-
+ 
 }
 .main .item a{
   color: #FFF;
@@ -565,7 +568,7 @@ line-height: normal;
 .main .item {
   position: relative;
   cursor: pointer;
-
+ 
 }
 .main .item a{
   color: #FFF;
@@ -582,7 +585,7 @@ line-height: normal;
   margin-right: 20px;
   padding : 5px;
   margin : -10px 0 0 -35px ;
-  margin-right : 20px;
+  margin-right : 20px; 
 }
 .main .item .sub-item {
   margin : 0 0 0 19px;
@@ -670,11 +673,24 @@ text-decoration: none;
   line-height: normal;
   margin-left: 27px;
 }
+
+
+
+
+
+        
+
+
     </style>
+
   </head>
+
 <body>
+  
 <div class="container">
-    <div class="sidebar">
+  
+
+  <div class="sidebar">
         <div class="main">
 
           <div class="list-nine">
@@ -687,8 +703,8 @@ text-decoration: none;
           <div class="item"><a href="{{ url('/DashboardPengurus') }}"><img src="{{ asset('img/airplay.svg') }}"alt="" class="icon"></i>DashBoard</a>
           </div>
           <p class="zack">-</p>
-
-
+          
+          
 
 
 
@@ -696,14 +712,14 @@ text-decoration: none;
                   <i class="fas fa-angle-right dropdown"></i>
                 </a>
                   <div class="sub-menu">
-                    <a href="{{ url('/dashboardPengurus/DataHunian') }}" class="sub-item">Data Hunian</a>
-                    <a href="{{ url('/dashboardPengurus/DaraWarga') }}" class="sub-item">Data Warga</a>
-                    <a href="{{ url('/dashboardPengurus/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
-                    <a href="{{ url('/dashboardPengurus/DataPindah') }}" class="sub-item">Keluarga Pindah Hunian</a>
-                    <a href="{{ url('/dashboardPengurus/KepemilikanHunian') }}" class="sub-item">Kepemilikan hunian</a>
+                    <a href="{{ url('/Hunian') }}" class="sub-item">Data Hunian</a>
+                    <a href="{{ url('/Warga') }}" class="sub-item">Data Warga</a>
+                    <a href="{{ url('/DataKeluarga') }}" class="sub-item">Data Keluarga</a>
+                    <a href="{{ url('/PindahHunian') }}" class="sub-item">Keluarga Pindah Rumah</a>
+                    <a href="{{ url('/Kepemilikan') }}" class="sub-item">Kepemilikan hunian</a>
                   </div>
                   </div>
-
+              
 
 
 
@@ -712,94 +728,94 @@ text-decoration: none;
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/PeriodeKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
-                  <a href="{{ url('/dashboardPengurus/Jabatan') }}" class="sub-item">Jabatan Kepengurusan</a>
-                  <a href="{{ url('/dashboardPengurus/Pengurus') }}" class="sub-item">Data Pengurus</a>
+                  <a href="{{ url('/PerKepengurusan') }}" class="sub-item">Periode Kepengurusan</a>
+                  <a href="{{ url('/JabKepengurusan') }}" class="sub-item">Jabatan Kepengurusan</a>
+                  <a href="{{ url('/DatPengurus') }}" class="sub-item">Data Pengurus</a>
                   </div>
               </div>
-
-
+            
+            
 
 
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/bar-chart.png') }}"alt="" class="icon"></i>Keuangan
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/DataBank') }}" class="sub-item">Data Bank</a>
-                  <a href="{{ url('/dashboardPengurus/Posbiaya') }}" class="sub-item">Pos Biaya</a>
-                  <a href="{{ url('/dashboardPengurus/RekeningBank') }}" class="sub-item">Rekening Bank</a>
-                  <a href="{{ url('/dashboardPengurus/DataKas') }}" class="sub-item">Data Kas</a>
+                  <a href="{{ url('/Databank') }}" class="sub-item">Data Bank</a>
+                  <a href="{{ url('/Posbiaya') }}" class="sub-item">Pos Biaya</a>
+                  <a href="{{ url('/Rekeningbank') }}" class="sub-item">Rekening Bank</a>
+                  <a href="{{ url('/Datakas') }}" class="sub-item">Data Kas</a>
+                  <a href="{{ url('/KeuanganLaporan') }}" class="sub-item">Laporan</a>
                   </div>
               </div>
-
-
+            
+            
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/atm 1.png') }}"alt="" class="icon">Iuran Warga
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/Iuran') }}" class="sub-item">Data Iuran</a>
-                  <a href="{{ url('/dashboardPengurus/TerimaIuran') }}" class="sub-item">Terima Iuran</a>
-                  <a href="{{ url('/dashboardPengurus/Laporan') }}" class="sub-item">Laporan</a>
-                  <a href="{{ url('/dashboardPengurus/PengingatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
-                  </div>
+                  <a href="{{ url('/Dataiuran') }}" class="sub-item">Data Iuran</a>
+                  <a href="{{ url('/Terimaiuran') }}" class="sub-item">Terima Iuran</a>
+                  <a href="{{ url('/Laporaniuran') }}" class="sub-item">Laporan</a>
+                  <a href="{{ url('/IngatPembayaran') }}" class="sub-item">Pengingat Pembayaran</a>
+                  </div>               
               </div>
-
-
+            
+            
               <div class="item"><a class="sub-btn"><img src="{{ asset('img/shield.png') }}"alt="" class="icon"></i>Keamanan
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
-                  <a href="{{ url('/dashboardPengurus/DataSatpam') }}" class="sub-item">Data Satpam</a>
-                  <a href="{{ url('/dashboardPengurus/DataJadwal') }}" class="sub-item">Jadwal Jaga</a>
-                  <a href="{{ url('/dashboardPengurus/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
+                  <a href="{{ url('/RumahKosong') }}" class="sub-item">Rumah Kosong</a>
+                  <a href="{{ url('/DataSatpam') }}" class="sub-item">Data Satpam</a>
+                  <a href="{{ url('/JadwalJaga') }}" class="sub-item">Jadwal Jaga</a>
+                  <a href="{{ url('/TamuMenginap') }}" class="sub-item">Tamu Menginap</a>
                   </div>
                 </div>
-
-
-                <div  class="item"><a href="{{ url('/dashboardPengurus/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
-
-                </a>
-                </div>
-
-                <div class="item"><a href="{{ url('/dashboardPengurus/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+            
+            
+                <div  class="item"><a href="{{ url('/Diskusi') }}" class="sub-btn"><img src="{{ asset('img/message-circle.png') }}"alt="" class="icon"></i>Diskusi
 
                 </a>
                 </div>
-
-                <div class="item"><a href="{{ url('/dashboardPengurus/Voting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
-
+                
+                <div class="item"><a href="{{ url('/Pengumuman') }}" class="sub-btn"><img src="{{ asset('img/info.png') }}"alt="" class="icon"></i>Pengumuman
+             
                 </a>
                 </div>
-                <div class="item"><a href="{{ url('/dashboardPengurus/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
+
+                <div class="item"><a href="{{ url('/Evoting') }}" class="sub-btn"><img src="{{ asset('img/copy.png') }}"alt="" class="icon"></i>E-Voting
+                  
+                </a>
+                </div>
+                <div class="item"><a href="{{ url('/UMKM') }}" class="sub-btn"><img src="{{ asset('img/mdi_cart-sale.png') }}"alt="" class="icon"></i>UMKM
                   </a>
                   </div>
 
-                  <div class="item"><a href="{{ url('/dashboardPengurus/Berita') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
-
+                  <div class="item"><a href="{{ url('/BeritaKampung') }}" class="sub-btn"><img src="{{ asset('img/Vector.png') }}"alt="" class="icon"></i>Berita Kampung
+               
                   </a>
                   </div>
                   <div class="item"><a class="sub-btn"><img src="{{ asset('img/tul.svg') }}"alt="" class="icon"></i>Manajemen Akun
                 <i class="fas fa-angle-right dropdown"></i>
               </a>
                 <div class="sub-menu">
-                  <a href="{{ url('/dashboardPengurus/Users') }}" class="sub-item">User</a>
-                  <a href="{{ url('/dashboardPengurus/Role') }}" class="sub-item">Role</a>
+                  <a href="{{ url('/ManajemenUser') }}" class="sub-item">User</a>
+                  <a href="{{ url('/Manajemen') }}" class="sub-item">Role</a>
                   </div>
                 </div>
-
-
+                  
         </div>
-  </div>
+  </div> 
   <div class="main-konten">
                     <div class="around">
                       <h1 class="strip">senin 19 desember 123</h1>
                             <h1 class="kanan"><img src="{{ asset('img/383.png') }}" alt="" class="icon" i class="fas fa-angle-right dropdown"></i>
                             </h1>
                                   <div class="drop"><a class="sub-btn">
-                                    <i class="fas fa-angle-right dropdown"></i></a>
+                                    <i class="fas fa-angle-right dropdown"></i></a>      
                                       <div class="sub-menu">
-
+                                  
                                       <div class="view">
                                       <a href="{{ url('/Profile') }}" class="tohe">
                                       <img src="{{ asset('img/ura.svg') }}" alt="View Profile" class="icon">
@@ -823,63 +839,66 @@ text-decoration: none;
                                       </div>
                                   </div>
                     </div>
-
+                    
                     <div class="navbar">
-                        <div class="green">
-                            <a><img src="{{ asset('img/123.svg') }}" alt="" class="icon">History Kedatangan Tamu</h1></a>
-                            <h1 class="text-one">4 Orang</h1>
-                          </div>
+                    <div class="green">
+                      <a><img src="{{ asset('img/123.svg') }}" alt="" class="icon">Jumlah Data Iuran</h1></a>
+                      <h1 class="text-one">{{ $iuran }} Data</h1>
+                    </div>
+                      
+                    <div class="yellow">
+                      <a><img src="{{ asset('img/asd.svg') }}" alt="" class="icon">Info Rumah Kosong</h1></a>
+                      <h1 class="text-one">{{ $rumahkosong }}</h1>
+                    </div>
 
-                          <div class="yellow">
-                            <a><img src="{{ asset('img/what.svg') }}" alt="" class="icon">Total Tagihan Iuran</h1></a>
-                            <h1 class="text-one">Tidak Ada Tagihan Untuk Iuran</h1>
-                          </div>
-
-                          <div class="red">
-                            <a><img src="{{ asset('img/sangkuni.svg') }}" alt="" class="icon">History Pembayaran Iuran</a>
-                            <h1 class="text-one">4 KALI BAYAR</h1>
-
-                          </div>
-
+                    <div class="pink">
+                      <a><img src="{{ asset('img/asd.svg') }}" alt="" class="icon">Info Hunian & Warga</h1></a>
+                      <h1 class="text-one">Total Hunian</h1>
+                      <h1 class="text-tree">:</h1>
+                      <h1 class="text-four">{{ $hunian }}</h1>
+                      <h1 class="text-two">Total KK</h1>
+                      <h1 class="text-five">:</h1>
+                      <h1 class="text-six">{{ $keluarga }}</h1>
+                    </div>
+            
                       <div class="allert">
                         <a><img src="{{ asset('img/alert-circle.svg') }}" alt="" class="icon">Pengumuman</h1></a>
                         <span>
-                          <h1 class="text-one" align="left">Kategori : Kebersihan.</h1>
-                          <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
-                          <h1 class="text-one" align="left">Isi Pengumuman :</h1>
-                          <h1 class="text-one" align="left">Diberitahukan kepada seluruh</h1>
-                          <h1 class="text-one" align="left">warga bahwa pada tanggal 01</h1>
-                          <h1 class="text-one" align="left">Oktober 2021 akan diadakan kerja</h1>
-                          <h1 class="text-one" align="left">bakti pembersihan gorong-gorong.</h1>
-                          <h1 class="text-one" align="left">dimohon kehadirannya.</h1>
-                          <h1 class="text-one" align="left">terima kasih.</h1>
+                            @foreach ($pengumuman as $item)                            
+                            <h1 class="text-one" align="left">Kategori : {{ $item->judul }}</h1>
+                            <h1 class="text-one" align="left">Untuk : Seluruh Warga.</h1>
+                            <h1 class="text-one" align="left">Isi Pengumuman :</h1>
+                            <h1 class="text-one" align="left">{{ $item->isi }}</h1>
+                            @endforeach
                         </span>
                       </div>
-
+            
                       <div class="foto">
                         <a><img src="{{ asset('img/berita.svg') }}" alt="" class="icon">Berita Kampung</h1></a>
-
-
-                        <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-                        <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-                        <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                            <p>_________________________________________________________________________________</p>
-                        <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-                        <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-                        <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                            <p>_________________________________________________________________________________</p>
-                        <h1 class="text-one" align="left"><img src="{{ asset('img/foto.png') }}" alt="" class="icon"></a>
-                        <h1 class="text-tree" align="left">Kerja bakti tanggal 16/04/2023 jam 09:00 WIB</h1>
-                        <h1 class="text-two" align="left">Kumpul dilapangan depan mesjid </h1>
-                     </div>
+                        
+                        @foreach ($berita as $item)                           
+                            <h1 class="text-one" align="left"><img src="{{ asset('path-to-your-image-directory/'.$item->foto) }}" alt="" class="icon"></a>
+                            <h1 class="text-tree" align="left">{{ $item->judul }}</h1>
+                            <h1 class="text-two" align="left">{{ $item->isi }}</h1>
+                            <hr>
+                        @endforeach
+                </div>
+                <div class="Data">
+            <a><img src="{{ asset('img/444.svg') }}" alt="" class="icon">Data Iuran</h1></a>
+            <h1 class="text-one" align="left">1.Iuran Kebersihan</h1>
+            <h1 class="text-one" align="left">2.Iuran Kematian</h1>
+            <h1 class="text-one" align="left">3.Iuran Kematian</h1>
+            
+          </div>
+                      
                     </div>
-
-
+                      
+                      
               </div>
 </div>
 </div>
 
-
+ 
 
 
 
@@ -921,8 +940,8 @@ text-decoration: none;
               modal.style.display = "none";
           });
           </script>
-
-
-
+          
+          
+          
       </body>
 </html>
